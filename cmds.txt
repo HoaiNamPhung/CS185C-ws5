@@ -1,0 +1,43 @@
+ 1069  mkdir CS185C/ws/ws5
+ 1070  ls
+ 1071  src=amazon_reviews_us_Books_v1_02.tsv;
+ 1072  src=amazon_reviews_us_Books_v1_02.tsv;for i in {1..1000}; do
+ 1073  src=amazon_reviews_us_Books_v1_02.tsv;
+ 1074  src=amazon_reviews_us_Books_v1_02.tsv;\
+ 1075  mkdir CS185C/ws/ws5/CUSTOMERS
+ 1076  cd CS185C/ws/ws5
+ 1077  ls
+ 1078  cd ..
+ 1079  src=amazon_reviews_us_Books_v1_02.tsv;cut -d '	' -f2 src | sort | uniq -c | sort -k1 | tail -n1000 | while read line; do grep "$line" src > "CS185C/ws/ws5/CUSTOMERS/${line}.txt"; done &    
+ 1080  jobs
+ 1081  src=amazon_reviews_us_Books_v1_02.tsv;cut -d '	' -f2 $src | sort | uniq -c | sort -k1 | tail -n1000 | while read line; do grep "$line" $src > "CS185C/ws/ws5/CUSTOMERS/${line}.txt"; done &    
+ 1082  ls
+ 1083  cd
+ 1084  src=amazon_reviews_us_Books_v1_02.tsv; cut -d '	' -f2 $src | sort | uniq -c | sort -k1 | tail -n1000 | while read line; do grep "$line" $src > "CS185C/ws/ws5/CUSTOMERS/${line}.txt"; done &    
+ 1085  jobs
+ 1086  cd CS185C/ws/ws5/CUSTOMERS
+ 1087  ls
+ 1088  fg 1
+ 1089  jobs
+ 1090  rm *
+ 1091  ls
+ 1092  cd ..
+ 1093  src=amazon_reviews_us_Books_v1_02.tsv; cut -d '	' -f2 $src | sort | uniq -c | sort -k1 | awk -F" " '$1 != 1 {print $2}' | tail -n1000 | while read line; do grep "$line" $src > "CS185C/ws/ws5/CUSTOMERS/${line}.txt"; done &    
+ 1094  cd
+ 1095  src=amazon_reviews_us_Books_v1_02.tsv; cut -d '	' -f2 $src | sort | uniq -c | sort -k1 | awk -F" " '$1 != 1 {print $2}' | tail -n1000 | while read line; do grep "$line" $src > "CS185C/ws/ws5/CUSTOMERS/${line}.txt"; done &    
+ 1096  jobs
+ 1097  cd CS185C/ws/ws5/CUSTOMERS
+ 1098  ls
+ 1099  jobs
+ 1100  ls
+ 1101  head 33113980.txt
+ 1102  ls
+ 1103  cd ..
+ 1104  git init .
+ 1105  script ws5.txt
+ 1106  less ws5.txt
+ 1107  vi ws5.txt
+ 1108  cd 
+ 1109  vi cmds.txt
+ 1110  history
+ 1111  history > cmds.txt
